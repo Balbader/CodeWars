@@ -54,14 +54,6 @@ class Song{
         console.log("temp: ", temp);
     }
 }
-
-const theView = new Song("The View", "Melissa McMillan");
-
-const day1 = ['John', 'Fred', 'BOb', 'carl', 'RyAn'];
-theView.howMany(day1);
-
-const day2 = ['JoHn', 'Luke', 'AmAndA'];
-theView.howMany(day2);
 */
 
 class Song {
