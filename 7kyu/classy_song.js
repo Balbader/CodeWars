@@ -31,7 +31,6 @@
 // mountMoose.howMany(['John', 'joHN', 'carl']); => 2
 // Good luck!
 
-/*
 class Song{
     constructor(title, artist){
         this.title = title;
@@ -54,8 +53,8 @@ class Song{
         console.log("temp: ", temp);
     }
 }
-*/
 
+/*
 class Song {
   constructor(title, artist) {
     this.title = title;
@@ -70,6 +69,7 @@ class Song {
     return this.watches.size - size;
   }
 }
+*/
 
 
 const theView = new Song("The View", "Melissa McMillan");
