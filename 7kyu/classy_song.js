@@ -31,8 +31,9 @@
 // mountMoose.howMany(['John', 'joHN', 'carl']); => 2
 // Good luck!
 
-class Song{
-    constructor(title, artist){
+/*
+class Song {
+    constructor(title, artist) {
         this.title = title;
         this.artist = artist;
     }
@@ -51,8 +52,8 @@ class Song{
         console.log("temp: ", temp);
     }
 }
+*/
 
-/*
 class Song {
   constructor(title, artist) {
     this.title = title;
@@ -67,15 +68,12 @@ class Song {
     return this.watches.size - size;
   }
 }
-*/
 
 
 const theView = new Song("The View", "Melissa McMillan");
 
 const day1 = ['John', 'Fred', 'BOb', 'carl', 'RyAn'];
-//console.log(theView.howMany(day1));
-theView.howMany(day1);
+console.log(theView.howMany(day1));
 
 const day2 = ['JoHn', 'Luke', 'AmAndA'];
-//console.log(theView.howMany(day2));
-theView.howMany(day2);
+console.log(theView.howMany(day2));
