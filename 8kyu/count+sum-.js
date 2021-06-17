@@ -10,7 +10,7 @@ const countPositivesSumNegatives = (array) => {
     let negSum = 0;
     const res = [];
     if (array == null || array.length < 1) {
-         return [];
+        return [];
     }
     for (let i = 0; i < array.length; i++) {
         if (array[i] > 0) {
