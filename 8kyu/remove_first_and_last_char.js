@@ -7,12 +7,12 @@
  * You don't have to worry with strings with less than two characters.
 */
 
-//const removeChar = str => {
-    //newStr = str.split('');
-    //newStr[0] = '';
-    //newStr[newStr.length - 1] = '';
-    //return newStr.join('');
-//}
+const removeChar = str => {
+    newStr = str.split('');
+    newStr[0] = '';
+    newStr[newStr.length - 1] = '';
+    return newStr.join('');
+}
 
 
 // Variation
