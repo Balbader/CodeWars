@@ -21,6 +21,16 @@ char    *place_signs(char phnum[15])
     return (phnum);
 }
 
+int	ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+		++i;
+	return (i);
+}
+
 char    *create_phone_number(char phnum[15], const unsigned char nums[10])
 {
     int i;
