@@ -11,16 +11,16 @@ const getWordCount = (str) => {
 
   let count = 0;
   let i = 0;
-  while (str[i]) {
+  while (trimmedStr[i]) {
 
-    if (accepted(str[i])) {
+    if (accepted(trimmedStr[i])) {
       count++;
-      while (accepted(str[i]))
+      while (accepted(trimmedStr[i]))
         ++i;
     }
 
-    else if (!accepted(str[i])) {
-      while (!accepted(str[i]))
+    else if (!accepted(trimmedStr[i])) {
+      while (!accepted(trimmedStr[i]))
         ++i;
     }
 
@@ -30,7 +30,7 @@ const getWordCount = (str) => {
   return count;
 }
 
-
-const str = "Hello ... world my, hello myhyou /how my are hello 38 you today? hello my name is my basil you"
+// my(5), hello(4), you(3)
+const str = "Hello ... world my, hello my you /how my are hello 38 you today? hello my name is my basil you"
 const wordCount = getWordCount(str);
 console.log(`Word Count : ${wordCount}`);
