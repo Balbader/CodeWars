@@ -5,12 +5,12 @@ const accepted = (char) => {
 const getWordCount = (str) => {
 
   const trimmedStr = str.trim();
+  let count = 0;
+  let i = 0;
 
   if (trimmedStr === '')
     return 0;
 
-  let count = 0;
-  let i = 0;
   while (trimmedStr[i]) {
 
     if (accepted(trimmedStr[i])) {
@@ -34,3 +34,6 @@ const getWordCount = (str) => {
 const str = "Hello ... world my, hello my you /how my are hello 38 you today? hello my name is my basil you"
 const wordCount = getWordCount(str);
 console.log(`Word Count : ${wordCount}`);
+
+let words = ["basil", "mimi", "faten"];
+console.log(words);
