@@ -1,15 +1,24 @@
 const flickSwitch = (arr) => {
+
     const flick = "flick";
+    let bool = true;
+    let newArr = new Array;
+
     arr.forEach(element => {
-        let bool = "true";
+
         if (element == flick)
-            bool == "false";
-        console.log(element);
-        console.log(bool);
-        console.log("\n");
+        {
+            if (bool == true)
+                bool = false;
+            else if (bool == false)
+                bool = true;
+        }
+
+        newArr.push(bool);
     });
+    console.log(newArr);
 }
 
-const array = ["apple", "banana", "flick", "cherry", "orange", "tomato"];
+const array = ["apple", "banana", "flick", "cherry", "flick", "tomato"];
 
 flickSwitch(array);
