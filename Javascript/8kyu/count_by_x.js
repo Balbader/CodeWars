@@ -23,4 +23,6 @@ const countBy = (x, n) => {
     return arr;
 }
 
+console.log(countBy(1, 10));
+
 countBy(1, 10);
